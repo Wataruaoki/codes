@@ -157,7 +157,6 @@ end
         end
     end
     α::Array{RealNumber, 1} = -(A \ b)
-    #println(α)
     # 推定量(パラメータ関数)
     @inline function approximate_matching_estimator_function(x::Array{RealNumber})::RealNumber
         local res::RealNumber = 0
